@@ -8,7 +8,7 @@ const analysisRoutes = require("./routes/analysisRoutes");
 const app = express();
 
 app.use(cors({
-  origin: "https://expense-tracker.vercel.app"
+  origin: "https://personal-expense-tracker-6jid.vercel.app/"
 }));
 app.use(express.json());
 
@@ -17,4 +17,5 @@ app.use("/api/expenses", expenseRoutes);
 app.use("/api/analysis", analysisRoutes);
 
 module.exports = app;
+
 
