@@ -1,6 +1,6 @@
 // ================= BASE CONFIG =================
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+  import.meta.env.VITE_API_URL || "https://personal-expense-tracker-2-hnju.onrender.com";
 
 function getToken() {
   const user = JSON.parse(localStorage.getItem("user"));
@@ -89,3 +89,4 @@ export async function apiDelete(path) {
   if (!res.ok) throw new Error(json.message || "Delete failed");
   return json;
 }
+
